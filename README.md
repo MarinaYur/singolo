@@ -1,0 +1,2 @@
+# singolo
+task in rsshool
