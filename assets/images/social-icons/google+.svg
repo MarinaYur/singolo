@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="35" height="35">
+	<defs>
+		<image width="14" height="14" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABbElEQVQ4T21SQVLCUAxNqOIWb0BvgDeAE8gNLDOWcVGcsqGyEldYNqBl4VBnrCdQTwA3gBvIEboVpsSk9OsvJYtOfpqX9/L+R+Cw3HHlNPkZA6Al5yxiAPoMg7uWVvtLUTLb8ZeAUCHatRCNKgPepG4YO/Nl0l8fBV47wzpiaY4ID7Nnb5AO6jwyEC0e1Hid9hdHge1bf0AE90w9mQVeV5pUTQfaHZ942CIMeg3pQcXIebw1ymY06caKUZdaAGo71jjnfYiloSUKyMB3SIBNk6C6DOd/q5RRPuLqSbLhZrzMGtZh4JmamsKaKVCF7Y5qkNAyY4j0qyhIFbbybuOyQVcMqOqD8k4fmGN3RvO9PIq2xllXzGk7fpMQPmQnlnz+7zTyCr0o3TGVQLAKp95FTnZ2lwzMraN69kB2U8zIA/1vPlcU46E7mD23mrBiCb5S47N99UdRAN64w2qSlOSumtrPmI15Uk+wcBdc+AU72LWE2RLohAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #666d89 } 
+	</style>
+	<g id="About Us">
+		<g id="Social Media">
+			<g id="Google">
+				<use id="google+" href="#img1" transform="matrix(1,0,0,1,10,10)"/>
+				<path id="Ellipse 2 copy" class="shp0" d="M17 1C25.84 1 33 8.16 33 17C33 25.84 25.84 33 17 33C8.16 33 1 25.84 1 17C1 8.16 8.16 1 17 1Z" />
+			</g>
+		</g>
+	</g>
+</svg>

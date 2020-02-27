@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="35" height="35">
+	<defs>
+		<image width="14" height="14" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAsElEQVQ4T2NMzek8z8DIYMDAwPDgNzOb4YIJhR+AbIKAMTW38z9M1f///xznTKk8QFAXUAEjko0fgDYqEm0jyPSUnHYHYm2CuQbDqSAJRkam/RCaoZHhPwM/0C8FcA0MDBNmTS4vxKsRqBgUUALofgYZSEgjSA9Q8/8NQPsDkAz5QFAjLKTTcjoD/jMyrCfKjyBFsyeXM4LojIJ2hb9/me6TrBGkATnOCToVZuMQ1ggABOmHrLggMy4AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #666d89 } 
+	</style>
+	<g id="About Us">
+		<g id="Social Media">
+			<g id="LinkedIn">
+				<use id="linkedin" href="#img1" transform="matrix(1,0,0,1,10,10)"/>
+				<path id="Ellipse 2 copy 3" class="shp0" d="M17 1C25.84 1 33 8.16 33 17C33 25.84 25.84 33 17 33C8.16 33 1 25.84 1 17C1 8.16 8.16 1 17 1Z" />
+			</g>
+		</g>
+	</g>
+</svg>
