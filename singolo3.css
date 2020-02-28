@@ -1,0 +1,166 @@
+body {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;;
+}
+
+.block-form {
+    background-color: #f06c64;
+}
+
+/* block-form block*/
+
+.block-form__wrapper {
+    padding-top: 43px;
+}
+
+
+h2 {
+    font-size: 30px;
+    font-family: "Lato", "Verdana", sans-serif;
+    line-height: 18px;
+    font-weight: 900;
+    text-align: left;
+    color: #666d89;
+}
+
+.block-form h2 {    
+    color: #f0d8d9;    
+    margin: 25px 0 27px 0;
+}
+
+.block-form h3 {
+    font-size: 18px;
+    color: #f0d8d9;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    margin: 0;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato", "Verdana", sans-serif;
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+}
+
+.block-form-description {
+    color: #f0d8d9;
+}
+
+.layout-2-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    padding-top: 44px;
+    width: 615px;
+}
+
+input {
+    width: 604px;
+    height: 37px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    margin-bottom: 16px;
+    border: none;
+    padding: 1px 0 0 15px;
+}
+
+::placeholder {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato", "Verdana", sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+textarea {
+    width: 607px;
+    height: 195px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    padding: 7px 0 0 13px;
+    border: none;
+}
+
+.block-form__contact {
+    padding: 42px 0 0 24px
+}
+
+.block-form__contact p, a {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato", "Verdana", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    text-decoration: none;
+}
+
+.block-form__contact>p {
+    padding-top: 8px;
+}
+
+.block-form__contact a {
+    cursor: pointer;
+}
+
+.block-form__grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 12fr;
+    padding-top: 19px;
+    padding-left: 1px;
+}
+
+.icon_location {
+    padding: 6px 0 0 3px;
+}
+
+.icon_phone {
+    padding: 5px 0 0 1px;
+}
+
+.icon_letter {
+    padding-top: 8px;
+}
+
+.block-form__bottom {
+    height: 6px;
+    background-color: #ea676b;
+    margin-top: 63px;
+}
+
+/*footer block*/
+
+footer {
+    background-color: #2d303a;
+}
+
+.layout-4-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contacts {
+    list-style-type: none;
+    padding: 5px 0px 0 1px;
+    width: 152px;
+}
+
+.footer__copyright {
+    width: 92px;
+    height: 11px;
+    padding: 33px 0 0 3px;
+}
