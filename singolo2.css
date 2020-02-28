@@ -81,12 +81,15 @@ h2 {
     border: 1px solid #666d89;
 }
 
-.portfolio__img {
-    height: 600px;
+.layout-4-column {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.portfolio__img {
+    height: 600px;    
     padding: 18px 0 66px 0;
     overflow: hidden;
 }
@@ -94,7 +97,6 @@ h2 {
 .portfolio__img img {
     width: 220px;
     height: 187px;
-    display: block;
     padding-bottom: 20px;
 }
 
