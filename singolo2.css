@@ -169,6 +169,7 @@ h3 {
 .about-us__contacts img {
     width: 34px;
     height: 35px;
+    cursor: pointer;
 }
 
 .about-us__bottom {
