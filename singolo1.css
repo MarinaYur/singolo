@@ -148,7 +148,7 @@ h2 {
     font-family: "Lato", sans-serif;
     font-weight: 900;
     color: #666d89;
-    padding: 63px 0 16px 1px;
+    padding: 59px 0 20px 1px;
     margin: 0;
 }
 
@@ -156,10 +156,13 @@ h2 {
     font-size: 17px;
     line-height: 30px;
     color: #767e9e;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Verdana", sans-serif;
     font-weight: 300;
     margin: 0;
-    padding: 0 0 24px 2px;
+    padding: 0 0 22px 2px;
+    width: 952px;
+    word-spacing: 2.8px;
+    letter-spacing: 0.2px;
 }
 
 .services__grid {
@@ -180,26 +183,26 @@ h2 {
 
 .services__item_icon1 {
     background: url(assets/images/pen.png);
-    margin-top: 20px;
+    margin-top: 22px;
 }
 .services__item_icon2 {
     background: url(assets/images/lightbulb.png);
-    margin: 20px 0px 0px 6px;
+    margin: 22px 0px 0px 7px;
 }
 
 .services__item_icon3 {
     background: url(assets/images/heart.png);
-    margin: 20px 0 0 13px;
+    margin: 22px 0 0 14px;
 }
 
 .services__item_icon4 {
     background: url(assets/images/phone.png);
-    margin-top: 20px;
+    margin-top: 21px;
 }
 
 .services__item_icon5 {
     background: url(assets/images/bubble.png);
-    margin: 20px 0 0 6px;
+    margin: 21px 0 0 7px;
 }
 
 .services__item_icon6 {
@@ -216,6 +219,7 @@ h3 {
     color: #666d89;
     font-family: "Lato", sans-serif;
     font-weight: 900;
+    padding: 1px 0px 0px 1px;
 }
 
 .services__item_text > p {
@@ -223,8 +227,9 @@ h3 {
     color: #767e9e;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    margin: -11px 0px 12px 1px;
+    margin: -11px 0px 12px 2px;
     line-height: 21px;
+    word-spacing: 1.5px;
 }
 
 .services1 {

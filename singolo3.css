@@ -110,6 +110,7 @@ textarea {
 
 .block-form__contact>p {
     padding-top: 8px;
+    width: 309px;
 }
 
 .block-form__contact a {
@@ -157,6 +158,7 @@ footer {
     list-style-type: none;
     padding: 5px 0px 0 1px;
     width: 152px;
+    margin-bottom: 13px;
 }
 
 .footer__copyright {
