@@ -8,13 +8,13 @@ body {
     margin: 0 auto;;
 }
 
-.block-form {
+.get-a-quote {
     background-color: #f06c64;
 }
 
-/* block-form block*/
+/* get-a-quote block*/
 
-.block-form__wrapper {
+.get-a-quote__wrapper {
     padding-top: 43px;
 }
 
@@ -28,12 +28,12 @@ h2 {
     color: #666d89;
 }
 
-.block-form h2 {    
+.get-a-quote h2 {    
     color: #f0d8d9;    
     margin: 25px 0 27px 0;
 }
 
-.block-form h3 {
+.get-a-quote h3 {
     font-size: 18px;
     color: #f0d8d9;
     font-family: "Lato", sans-serif;
@@ -51,7 +51,7 @@ h2 {
     margin: 0;
 }
 
-.block-form-description {
+.get-a-quote-description {
     color: #f0d8d9;
 }
 
@@ -93,11 +93,11 @@ textarea {
     border: none;
 }
 
-.block-form__contact {
+.get-a-quote__contact {
     padding: 42px 0 0 24px
 }
 
-.block-form__contact p, a {
+.get-a-quote__contact p, a {
     font-size: 12px;
     line-height: 22px;
     color: #f0d8d9;
@@ -108,16 +108,16 @@ textarea {
     text-decoration: none;
 }
 
-.block-form__contact>p {
+.get-a-quote__contact>p {
     padding-top: 8px;
     width: 309px;
 }
 
-.block-form__contact a {
+.get-a-quote__contact a {
     cursor: pointer;
 }
 
-.block-form__grid {
+.get-a-quote__grid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 12fr;
@@ -137,7 +137,7 @@ textarea {
     padding-top: 8px;
 }
 
-.block-form__bottom {
+.get-a-quote__bottom {
     height: 6px;
     background-color: #ea676b;
     margin-top: 63px;
