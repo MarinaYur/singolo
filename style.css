@@ -439,6 +439,18 @@ input {
     padding: 1px 0 0 15px;
 }
 
+.button {
+    font-family: "Lato", "Verdana", sans-serif;
+    color: seashell;
+    height: 40px;
+    width: 142px;
+    background-color: rgb(245, 79, 37);
+    border: none;
+    border-radius: 5%;
+    float: right;
+    cursor: pointer;
+}
+
 ::placeholder {
     font-size: 12px;
     line-height: 22px;
@@ -505,7 +517,7 @@ textarea {
 .get-a-quote__bottom {
     height: 6px;
     background-color: #ea676b;
-    margin-top: 63px;
+    margin-top: 23px;
 }
 
 /*footer block*/

@@ -75,6 +75,18 @@ input {
     padding: 1px 0 0 15px;
 }
 
+.button {
+    font-family: "Lato", "Verdana", sans-serif;
+    color: seashell;
+    height: 40px;
+    width: 142px;
+    background-color: rgb(245, 79, 37);
+    border: none;
+    border-radius: 5%;
+    float: right;
+    cursor: pointer;
+}
+
 ::placeholder {
     font-size: 12px;
     line-height: 22px;
@@ -120,27 +132,30 @@ textarea {
 .get-a-quote__grid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 12fr;
+    grid-template-columns: 1fr 13fr;
     padding-top: 19px;
     padding-left: 1px;
 }
 
 .icon_location {
-    padding: 6px 0 0 3px;
+    padding: 6px 0 0 2px;
+    cursor: pointer;
 }
 
 .icon_phone {
-    padding: 5px 0 0 1px;
+    padding: 5px 0 0 0px;
+    cursor: pointer;
 }
 
 .icon_letter {
     padding-top: 8px;
+    cursor: pointer;
 }
 
 .get-a-quote__bottom {
     height: 6px;
     background-color: #ea676b;
-    margin-top: 63px;
+    margin-top: 23px;
 }
 
 /*footer block*/
