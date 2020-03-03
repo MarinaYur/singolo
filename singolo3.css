@@ -171,13 +171,13 @@ footer {
 
 .footer__contacts {
     list-style-type: none;
-    padding: 5px 0px 0 1px;
-    width: 152px;
+    padding: 6px 0px 0 2px;
+    width: 154px;
     margin-bottom: 13px;
 }
 
 .footer__copyright {
     width: 92px;
     height: 11px;
-    padding: 33px 0 0 3px;
+    padding: 33px 0 0 1px;
 }

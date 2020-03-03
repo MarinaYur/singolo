@@ -144,7 +144,7 @@ header li + li:before {
 }
 
 .slider__vertical-phone {
-    margin: -16px -392px 31px 0px;
+    margin: -16px -391px 31px 0px;
 }
 
 .slider__horizontal-phone {
@@ -533,13 +533,13 @@ footer {
 
 .footer__contacts {
     list-style-type: none;
-    padding: 5px 0px 0 1px;
-    width: 152px;
+    padding: 6px 0px 0 2px;
+    width: 154px;
     margin-bottom: 13px;
 }
 
 .footer__copyright {
     width: 182px;
     height: 11px;
-    padding: 33px 0 0 3px;
+    padding: 34px 0 0 2px;
 }
