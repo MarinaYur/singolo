@@ -1,6 +1,7 @@
 body {
     width: 1020px;
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 .wrapper {    
@@ -46,6 +47,10 @@ h3 {
 
 header {
     background-color: #2d303a;
+    position: fixed;
+    top: 0;
+    width: 1020px;
+    height: 89px;
 }
 
 .header-wrapper {
@@ -62,7 +67,7 @@ header {
     justify-content: space-between;
 }
 
-.logo span, #menu__home {
+.logo span, .menu_selected {
     color: #f06c64;
 }
 
@@ -75,7 +80,7 @@ ul:first-child {
     margin-left: -3px;
 }
 
-#menu__servises {
+.menu__servises {
     margin: 1px 0px 0px 1px;
 }
 
@@ -87,19 +92,23 @@ ul:first-child {
     padding: 0;    
 }
 
+.menu__item {
+    color: #ffffff;
+}
+
 .menu a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
     line-height: 6px;
-    color: #ffffff;
+    
     font-family: "Lato", sans-serif;
     font-weight: 700;
     padding-left: 2px;
     cursor: pointer;
 } 
 
-.menu a:hover {
+.menu a:not(.menu_selected):hover {
     color: red;
 }
 
@@ -124,6 +133,7 @@ header li + li:before {
 
 .slider__content {
     display: flex;
+    position: relative;
     justify-content: space-between;
     margin-left: 2px;
     margin-right: -1px;
@@ -132,7 +142,11 @@ header li + li:before {
 .slider__left-arrow {
     height: 27px;
     width: 16px;
-    padding-top: 281px;    
+    padding-top: 281px;
+    position: absolute;
+    margin-top: 28%;
+    margin-left: 4.5%;
+    z-index: 10;  
     cursor: pointer;
 }
 
@@ -530,6 +544,10 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
+.layout-4-column :nth-child(n+13) {
+    display: none;
+  }
 
 .footer__contacts {
     list-style-type: none;
