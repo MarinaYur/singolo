@@ -136,7 +136,7 @@ function activationOfPhoneScreens() {
             horizontalScreen.style = 'display: none';
             j--;
         }
-    });    
+    });
 }
 
 // portfolio
@@ -213,7 +213,9 @@ function modalWindowInsteadOfSubmit() {
             hideModalTimerId();
         }
     })
-   hideModal();
+
+    hideModal();
+    // addListenerToHideModal();
 }
 
 function addInformationInModalAndShowModal() {
@@ -231,15 +233,15 @@ function addInformationInModalAndShowModal() {
     modalDescription.innerHTML = '<b>Description: </b>' + formDescription.value.substring(0, 45);
     let modal = document.querySelector('.modal');
     modal.style = 'display:block';
-    
 }
 
-
+//closing after press button OK
 function hideModal() {
     let modal_btn = document.querySelector('.modal_btn');
     let modal = document.querySelector('.modal');
     modal.addEventListener('click', (event) => {
         if (event.target.classList.contains('modal_btn')) {
+            clearInterval(timerId);
             modal.style = 'display:none';
             modal_btn.innerText = '10 Ok';
             document.querySelector('.get-a-quote form').reset();
@@ -247,23 +249,21 @@ function hideModal() {
     })
 }
 
-
+//closing after timer 10 sec
 function hideModalTimerId() {
     let modal_btn = document.querySelector('.modal_btn');
     let modal = document.querySelector('.modal');
     let sec = parseInt(modal_btn.innerText);
-   
-    let timer = setInterval(function() {
-        if (--sec > 0) {
+    timerId = setInterval(function() {
+        if (--sec > 0 && modal.style != 'display:none') {
+            console.log('open');
             modal_btn.innerText = sec + ' Ok';
         } else {
             modal.style = 'display:none';
+            clearInterval(timerId);
+            modal_btn.innerText = '10 Ok';
+            document.querySelector('.get-a-quote form').reset();
         }
     }, 1000);
-    setTimeout(() => {
-        clearInterval(timer);
-        modal_btn.innerText = '10 Ok';
-        document.querySelector('.get-a-quote form').reset();
-    }, 10000); 
 }
 
