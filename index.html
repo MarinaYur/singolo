@@ -47,26 +47,26 @@
     <main>
       <!--slider block-->
       <section class="slider">
-          <div class="wrapper slider-wrapper">
-            <div class="slider__content">
-              <img class="slider__left-arrow slider__arrow" src="assets/images/left arrow.png" alt="left arrow">
-
-              
-              <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                  <img class="slider__vertical-phone" src="assets/images/iPhone Vertical.png" alt="iPhone Vertical">
-                  <img class="slider__horizontal-phone" src="assets/images/iPhone Horizontal.png" alt="iPhone Horizontal">
+          <div class="slider-wrapper">
+             
+                <div class="slide slide-1">
+                  <div class="slider__vertical-phone">
+                    <div class="screen-off vertical-screen-off"></div>
+                  </div>
+                  <div class="slider__horizontal-phone">
+                    <div class="screen-off horizontal-screen-off"></div>
+                  </div>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="slide slide-2">
                   <img class="slider__all-phones" src="assets/images/Slider(1)+.png" alt="all-phones">
                 </div>
                 
-
-              <img class="slider__right-arrow slider__arrow" src="assets/images/right arrow.png" alt="right arrow">
-            </div>
+                <a class="slider__control slider__control_left" href="#" role="button"></a>
+                <a class="slider__control slider__control_right" href="#" role="button"></a>
+              
           </div>
+          
         <div class="slider__bottom"></div>
       </section>
       
@@ -133,16 +133,16 @@
             <h2>Portfolio</h2>
             <p class="portfolio__description description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <div class="portfolio__tags">
-                <a class="tag tag--selected" href="#">
+                <a class="tag tag--selected">
                     <span class="portfolio__first-span">All</span>
                 </a>
-                <a class="tag tag--bordered" href="#">
+                <a class="tag tag--bordered">
                     <span class="portfolio__second-span">Web Design</span>
                 </a>
-                <a class="tag tag--bordered" href="#">
+                <a class="tag tag--bordered">
                     <span>Graphic Design</span>
                 </a>
-                <a class="tag tag--bordered" href="#">
+                <a class="tag tag--bordered">
                     <span class="portfolio__fourth-span">Artwork</span>
                 </a>
             </div>
@@ -160,12 +160,7 @@
                 <img src="assets/images/portfolio-images/row3/9.png" alt="dragoni">
                 <img src="assets/images/portfolio-images/row3/10.png" alt="letters">
                 <img src="assets/images/portfolio-images/row3/portfolio-11.png" alt="dragoni2">
-                <img src="assets/images/portfolio-images/row3/12.png" alt="wall">                
-
-                <img src="assets/images/portfolio-images/row3/9.png" alt="dragoni">
-                <img src="assets/images/portfolio-images/row3/10.png" alt="letters">
-                <img src="assets/images/portfolio-images/row3/portfolio-11.png" alt="dragoni2">
-                <img src="assets/images/portfolio-images/row3/12.png" alt="wall">                
+                <img src="assets/images/portfolio-images/row3/12.png" alt="wall">                        
             </div>
         </div>
         <div class="portfolio__bottom"></div>
@@ -250,12 +245,22 @@
                 Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                 `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
             </p>
+
+            <!--<div class="modal-window">-->
+              <div class="modal">
+                <p>The letter was sent</p>
+                <p class="modal_subject">Subject:</p>
+                <p class="modal_description">Description:</p>
+                <button class="modal_btn"> 10 OK</button>
+              </div>
+            <!--</div>-->
+
             <div class="layout-2-column">
                 <form action method="POST" id="get-a-quote__form">
                     <input type="text" name="name" required placeholder="Name (Required)" form="get-a-quote__form">
                     <input type="email" name="email" required placeholder="Email (Required)" form="get-a-quote__form">
-                    <input type="text" name="subject" placeholder="Subject" form="get-a-quote__form">
-                    <textarea name="your-project" placeholder=" Describe your project in detail..."></textarea>
+                    <input type="text" class="form_subject" placeholder="Subject" form="get-a-quote__form">
+                    <textarea class="form_description" placeholder=" Describe your project in detail..."></textarea>
                     <button type="submit" class="button button_colored">Send</button>
                 </form>
                 <div class="get-a-quote__contact">

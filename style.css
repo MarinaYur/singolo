@@ -51,6 +51,7 @@ header {
     top: 0;
     width: 1020px;
     height: 89px;
+    z-index: 1;
 }
 
 .header-wrapper {
@@ -124,6 +125,9 @@ header li + li:before {
 
 .slider {
     background-color: #f06c64;
+    position: relative;
+    overflow: hidden;
+    margin-top: 94px;
 }
 
 .slider__bottom {
@@ -131,38 +135,145 @@ header li + li:before {
     height:5px;
 }
 
-.slider__content {
+.slide {
+    display: none;
+    animation: 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slide-1 {
     display: flex;
     position: relative;
-    justify-content: space-between;
-    margin-left: 2px;
-    margin-right: -1px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content: center;
 }
 
-.slider__left-arrow {
-    height: 27px;
-    width: 16px;
-    padding-top: 281px;
+.vertical-screen-off {
+    display: none;
+    background: black;
+    width: 188px;
+    height: 333px;
+    margin: 135px 0 0px 16px;
+    transition: opacity 15s ease;
+}
+
+.horizontal-screen-off {
+    display: none;
+    background: black;
+    width: 333px;
+    height: 188px;
+    margin: 119px 0 0px 125px;
+}
+
+.slide-2 {
     position: absolute;
-    margin-top: 28%;
-    margin-left: 4.5%;
-    z-index: 10;  
-    cursor: pointer;
+    width: 100%;
+    /* left: -100%; */
+    text-align: center;
+    background-color: #648BF0;
+    height: 600px;
 }
 
-.slider__right-arrow {
-    height: 27px;
-    width: 16px;
-    padding-top: 281px;
-    cursor: pointer;
+.slider-wrapper {
+    display: flex;
+    
 }
+
+.slide-active, .next {
+    display: flex;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.slider__control {
+    position: absolute;
+    top: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    text-align: center;
+    transform: translateY(-50%);
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 26px;
+}
+
+.slider__control_left {
+    left: 0;
+}
+
+.slider__control_right {
+    right: 0;
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 28px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+    background-image: url("assets/images/left\ arrow.png");
+  }
+
+  .slider__control_right::before {
+    background-image: url("assets/images/right\ arrow.png");
+  }
 
 .slider__vertical-phone {
-    margin: -16px -391px 31px 0px;
+    background: url(assets/images/iPhone\ Vertical.png);
+    width: 244px;
+    height: 567px;
+    margin: -18px -51px 0px 0;
 }
 
 .slider__horizontal-phone {
-    margin: 69px -29px -56px 4px;
+    margin: 68px 0 0 40px;
+    background: url(assets/images/iPhone\ Horizontal.png);
+    width: 565px;
+    height: 369px;
 }
 
 /*services block*/
@@ -324,12 +435,18 @@ header li + li:before {
     height: 600px;    
     padding: 18px 0 66px 0;
     overflow: hidden;
+    align-content: space-around;
 }
 
 .portfolio__img img {
     width: 220px;
     height: 187px;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
+    margin-top: 20px;
+}
+
+.highlighting-img {
+    border: 5px solid #F06C64;
 }
 
 .portfolio__bottom {
@@ -413,6 +530,10 @@ header li + li:before {
 }
 
 /* get-a-quote block*/
+
+.get-a-quote {
+    
+}
 
 .get-a-quote__wrapper {
     padding-top: 43px;
@@ -534,6 +655,34 @@ textarea {
     margin-top: 23px;
 }
 
+.modal {
+    display: none;
+    padding: 25px 25px;
+    width: 320px;
+    height: 250px;
+    position: fixed;
+    border: 3px solid black;
+    top: 40%;
+    right: 45%;
+    z-index: 9;
+    background-color:  #af6265;
+    font-size: 22px;
+}
+
+.modal_btn {
+    font-size: 18px;
+    margin-left: 45px;
+}
+
+.modal :first-child {
+    font-weight: bold;
+}
+
+.modal p {
+    background-color: rosybrown;
+    border-radius: 5px;
+    padding-left: 15px;
+}
 /*footer block*/
 
 footer {
